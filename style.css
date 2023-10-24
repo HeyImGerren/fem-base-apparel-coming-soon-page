@@ -110,19 +110,21 @@ body {
 }
 
 .email-submit-container {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
 }
 
 .email-input {
-  /* position: absolute; */
+  display: inline-flex;
+  font-size: var(--fs-350);
   height: 48px;
   width: 311px;
   border-radius: 28px;
   border: 1px solid var(--clr-primary-100);
   opacity: 0.5;
-  padding: 11px 24px 9px;
+  padding-left: 24px;
+  margin-bottom: 8px;
 }
 
 .email-input::placeholder {
@@ -134,14 +136,21 @@ body {
 
 .email-input:focus-within {
   /* removes default blue highlight */
+  background: transparent;
   outline: none;
   border: 2px solid hsla(0, 92%, 68%, 1);
 }
 
 /* TODO: Add in invalid exclamation point logo at the end of the box */
 .email-input:invalid {
-  background-color: green;
+  /* background-color: green; */
   /* border: 3px solid red; */
+}
+
+.icon-error {
+  position: absolute;
+  left: 247px;
+  transform: translateY(-44px);
 }
 
 .email-submit-btn {
@@ -160,4 +169,12 @@ body {
 
 .email-submit-btn > img {
   margin-inline: auto;
+}
+
+.email-error-msg {
+  color: hsla(0, 92%, 68%, 1);
+  font-size: var(--fs-300);
+  font-weight: var(--fw-semi-bold);
+  /* padding-left: 24px; */
+  transform: translateX(-29%);
 }
