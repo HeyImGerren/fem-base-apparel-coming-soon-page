@@ -1,0 +1,163 @@
+:root {
+  /* Desaturated Red */
+  --clr-primary-100: hsl(0, 36%, 70%);
+  /* Soft Red */
+  --clr-primary-200: hsl(0, 93%, 68%);
+  /* Pure White */
+  --clr-neutral-100: hsla(0, 0%, 100%, 1);
+  /* Dark Grayish Red */
+  --clr-neutral-200: hsl(0, 6%, 24%);
+  /* linear gradient btn */
+  --linear-gradient: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
+
+  /* font-family primary */
+  --ff-primary: 'Josefin Sans', sans-serif;
+  --ff-body: var(--ff-primary);
+
+  /* font-weight */
+  --fw-regular: 300;
+  --fw-semi-bold: 400;
+  --fw-bold: 600;
+
+  /* font-size */
+  /* 13px */
+  --fs-300: 0.813rem;
+  /* 14px */
+  --fs-350: 0.875rem;
+  /* 16px */
+  --fs-400: 1rem;
+  /* 40px */
+  --fs-800: 2.5rem;
+  /* 64px */
+  --fs-900: 4rem;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin, this was modified to the below settings */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img,
+picture,
+svg {
+  /* max-width: 100%; */
+  display: block;
+}
+
+body {
+  font-family: var(--ff-body);
+  background: linear-gradient(150deg, #FFF 0%, #FFF4F4 84.51%);
+}
+
+.primary-header {
+  padding: 31px 32px;
+}
+
+.company-logo {
+  width: 100px;
+  height: 20.886px;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 32px 92px;
+}
+
+.top-heading,
+.bottom-heading {
+  text-align: center;
+  font-size: var(--fs-800);
+  line-height: 42px;
+  letter-spacing: 10.825px;
+}
+
+.top-heading {
+  color: var(--clr-primary-100);
+  font-weight: var(--fw-regular);
+  /* line-height: 42px; */
+}
+
+.bottom-heading {
+  color: var(--clr-neutral-200);
+  font-weight: var(--fw-bold);
+  /* line-height: 42; */
+  margin-bottom: 16px;
+}
+
+.cta {
+  width: 19.438rem;
+  color: var(--clr-primary-100);
+  font-size: var(--fs-350);
+  font-weight: var(--fw-semi-bold);
+  line-height: 22px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.email-submit-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-input {
+  /* position: absolute; */
+  height: 48px;
+  width: 311px;
+  border-radius: 28px;
+  border: 1px solid var(--clr-primary-100);
+  opacity: 0.5;
+  padding: 11px 24px 9px;
+}
+
+.email-input::placeholder {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-350);
+  color: var(--clr-primary-100);
+  opacity: 1;
+}
+
+.email-input:focus-within {
+  /* removes default blue highlight */
+  outline: none;
+  border: 2px solid hsla(0, 92%, 68%, 1);
+}
+
+/* TODO: Add in invalid exclamation point logo at the end of the box */
+.email-input:invalid {
+  background-color: green;
+  /* border: 3px solid red; */
+}
+
+.email-submit-btn {
+  position: absolute;
+  cursor: pointer;
+  margin-left: -64px;
+  border-radius: 100vw;
+  border-style: none;
+  width: 64px;
+  height: 48px;
+  background: var(--linear-gradient);
+  /* offset-x |  offset-y | blur-radius (larger the value, greater the blur) | spread-radius (negative value to shrink shadow inward) | color */
+  box-shadow: 0em 1.5em 2.2em -0.8em var(--clr-primary-100);
+  /* box-shadow: 0em 1.5em 2.7em -1em var(--clr-primary-100); */
+}
+
+.email-submit-btn > img {
+  margin-inline: auto;
+}
