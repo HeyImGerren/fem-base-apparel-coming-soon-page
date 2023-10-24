@@ -117,6 +117,7 @@ body {
 
 .email-input {
   display: inline-flex;
+  background: transparent;
   font-size: var(--fs-350);
   height: 48px;
   width: 311px;
@@ -142,10 +143,10 @@ body {
 }
 
 /* TODO: Add in invalid exclamation point logo at the end of the box */
-.email-input:invalid {
+/* .email-input:invalid {
   /* background-color: green; */
   /* border: 3px solid red; */
-}
+/* } */ 
 
 .icon-error {
   position: absolute;
@@ -177,4 +178,14 @@ body {
   font-weight: var(--fw-semi-bold);
   /* padding-left: 24px; */
   transform: translateX(-29%);
+}
+
+.icon-error,
+.email-error-msg {
+  display: none;
+}
+
+.icon-error[data-visible],
+.email-error-msg[data-visible] {
+  display: block;
 }
