@@ -195,10 +195,22 @@ body {
     height: 100vh;
   }
 
+  .company-logo {
+    height: 33px;
+    width: 158px;
+    /* padding-bottom: 136.09px; */
+  }
+
+
   header, 
   main {
     grid-area: main-content;
     /* height: 100vh; */
+  }
+
+  .primary-header,
+  main {
+    padding: 74.91px 165px;
   }
 
   .hero-img-container {
@@ -218,5 +230,51 @@ body {
   .hero-img {
     object-fit: fill;
     height: 100vh;
+  }
+
+  .hero-wrapper {
+    align-items: flex-start;
+    width: 444px;
+    padding: 0px;
+  }
+
+  .top-heading,
+  .bottom-heading {
+    text-align: left;
+    font-size: var(--fs-900);
+    letter-spacing: 17.321px;
+  }
+  
+  .top-heading {
+    line-height: 64px;
+    margin-top: 136.09px;
+  }
+
+  .bottom-heading {
+    line-height: 71px;
+    font-weight: var(--fw-bold);
+    margin-bottom: 32px;
+  }
+
+  .cta {
+    width: auto;
+    text-align: left;
+    font-size: var(--fs-400);
+    line-height: 28px;
+    margin-bottom: 40px;
+  }
+
+  .email-input {
+    width: 445px;
+    height: 56px;
+  }
+
+  /* TODO: Fix box shadow and error icon/message placement. Add hover color change */
+  .email-submit-btn {
+    width: 100px;
+    height: 56px;
+    margin-left: -100px;
+    /* offset-x |  offset-y | blur-radius (larger the value, greater the blur) | spread-radius (negative value to shrink shadow inward) | color */
+    /* box-shadow: 0em 1.5em 2.2em -0.8em var(--clr-primary-100); */
   }
 }
