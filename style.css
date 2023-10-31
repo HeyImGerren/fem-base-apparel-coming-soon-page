@@ -56,6 +56,7 @@ svg {
 body {
   font-family: var(--ff-body);
   background: linear-gradient(150deg, #FFF 0%, #FFF4F4 84.51%);
+  
 }
 
 .primary-header {
@@ -142,12 +143,6 @@ body {
   border: 2px solid hsla(0, 92%, 68%, 1);
 }
 
-/* TODO: Add in invalid exclamation point logo at the end of the box */
-/* .email-input:invalid {
-  /* background-color: green; */
-  /* border: 3px solid red; */
-/* } */ 
-
 .icon-error {
   position: absolute;
   left: 247px;
@@ -188,4 +183,40 @@ body {
 .icon-error[data-visible],
 .email-error-msg[data-visible] {
   display: block;
+}
+
+/* change to 1440px */
+@media (min-width: 900px) {
+  .wrapper {
+    display: grid;
+    grid-template-areas: 
+    'main-content picture';
+    grid-template-columns: 1.4fr 1fr;
+    height: 100vh;
+  }
+
+  header, 
+  main {
+    grid-area: main-content;
+    /* height: 100vh; */
+  }
+
+  .hero-img-container {
+    grid-area: picture;
+    height: 100vh;
+    /* width: 100%; */
+    /* background-image: url("/images/hero-desktop.jpg"); */
+    /* background-repeat: no-repeat; */
+    /* height: 790px; */
+  }
+
+  /* .hero-img-container > picture {
+    object-fit: fill;
+    height: 100%;
+  } */
+
+  .hero-img {
+    object-fit: fill;
+    height: 100vh;
+  }
 }

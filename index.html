@@ -13,28 +13,33 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header class="primary-header">
-      <img class="company-logo" src="/images/logo.svg" alt="">
-    </header>
-    <div class="hero-img-container">
-      <img class="hero-img" src="/images/hero-mobile.jpg" alt="">
-    </div>
-    
-    <main>
-      <div class="hero-wrapper">
-        <h2 class="top-heading">WE'RE</h2>
-        <h2 class="bottom-heading">COMING <br> SOON</h2> 
-        <p class="cta"> Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
-        <div class="email-submit-container">
-          <form action="#">
-            <input class="email-input" type="email" placeholder="Email Address" name="email" id="email" required>
-            <img class="icon-error" src="/images/icon-error.svg" width="24px" height="24px" alt="">
-            <button class="email-submit-btn" id="submit-btn"> <img src="/images/icon-arrow.svg" alt=""> </button>
-          </form>
-        </div> 
-        <p class="email-error-msg">Please provide a valid email</p>
+    <div class="wrapper">
+      <header class="primary-header">
+        <img class="company-logo" src="/images/logo.svg" alt="">
+      </header>
+      <div class="hero-img-container">
+        <picture>
+          <source media="(min-width: 900px)" srcset="/images/hero-desktop.jpg">
+          <img class="hero-img" src="/images/hero-mobile.jpg" alt="">
+        </picture>
       </div>
-    </main>
+      
+      <main>
+        <div class="hero-wrapper">
+          <h2 class="top-heading">WE'RE</h2>
+          <h2 class="bottom-heading">COMING <br> SOON</h2> 
+          <p class="cta"> Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+          <div class="email-submit-container">
+            <form action="#">
+              <input class="email-input" type="email" placeholder="Email Address" name="email" id="email" required>
+              <img class="icon-error" src="/images/icon-error.svg" width="24px" height="24px" alt="">
+              <button class="email-submit-btn" id="submit-btn"> <img src="/images/icon-arrow.svg" alt=""> </button>
+            </form>
+          </div> 
+          <p class="email-error-msg">Please provide a valid email</p>
+        </div>
+      </main>
+    </div>
     
     <!-- <footer>
       <p class="attribution">
