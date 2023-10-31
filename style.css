@@ -186,12 +186,12 @@ body {
 }
 
 /* change to 1440px */
-@media (min-width: 900px) {
+@media (min-width: 1440px) {
   .wrapper {
     display: grid;
     grid-template-areas: 
     'main-content picture';
-    grid-template-columns: 1.4fr 1fr;
+    grid-template-columns: 1.325fr 1fr;
     height: 100vh;
   }
 
@@ -207,6 +207,7 @@ body {
     grid-area: main-content;
     background-image: url('images/bg-pattern-desktop.svg');
     background-repeat: no-repeat;
+    height: 100vh;
   }
 
   .primary-header,
