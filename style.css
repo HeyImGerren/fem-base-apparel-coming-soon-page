@@ -260,6 +260,7 @@ body {
     width: auto;
     text-align: left;
     font-size: var(--fs-400);
+    font-style: normal;
     line-height: 28px;
     margin-bottom: 40px;
   }
@@ -275,6 +276,26 @@ body {
     height: 56px;
     margin-left: -100px;
     /* offset-x |  offset-y | blur-radius (larger the value, greater the blur) | spread-radius (negative value to shrink shadow inward) | color */
-    /* box-shadow: 0em 1.5em 2.2em -0.8em var(--clr-primary-100); */
+    /* box-shadow: 0em 0.7em 2.5em 0em var(--clr-primary-100); */
+    box-shadow: 0em 0.7em 1em 0.2em hsl(0, 36%, 70%, 30%);
+  }
+
+  .email-submit-btn:hover {
+    background: hsl(0, 80%, 90%);
+    box-shadow: 0em 0.9em 1.5em 0em hsl(0, 50%, 70%, 53%);
+  }
+
+  .email-input {
+    font-size: var(--fs-400);
+  }
+
+  .email-error-msg {
+    margin-top: 4px;
+    transform: translateX(15%);
+  }
+
+  .icon-error {
+    left: 473px;
+    transform: translateY(-48px);
   }
 }
