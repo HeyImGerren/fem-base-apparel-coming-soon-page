@@ -39,7 +39,6 @@
   box-sizing: border-box;
 }
 
-/* Remove default margin, this was modified to the below settings */
 * {
   margin: 0;
   padding: 0;
@@ -49,7 +48,6 @@
 img,
 picture,
 svg {
-  /* max-width: 100%; */
   display: block;
 }
 
@@ -90,13 +88,11 @@ body {
 .top-heading {
   color: var(--clr-primary-100);
   font-weight: var(--fw-regular);
-  /* line-height: 42px; */
 }
 
 .bottom-heading {
   color: var(--clr-neutral-200);
   font-weight: var(--fw-bold);
-  /* line-height: 42; */
   margin-bottom: 16px;
 }
 
@@ -137,7 +133,6 @@ body {
 }
 
 .email-input:focus-within {
-  /* removes default blue highlight */
   background: transparent;
   outline: none;
   border: 2px solid hsla(0, 92%, 68%, 1);
@@ -160,7 +155,6 @@ body {
   background: var(--linear-gradient);
   /* offset-x |  offset-y | blur-radius (larger the value, greater the blur) | spread-radius (negative value to shrink shadow inward) | color */
   box-shadow: 0em 1.5em 2.2em -0.8em var(--clr-primary-100);
-  /* box-shadow: 0em 1.5em 2.7em -1em var(--clr-primary-100); */
 }
 
 .email-submit-btn > img {
@@ -171,7 +165,6 @@ body {
   color: hsla(0, 92%, 68%, 1);
   font-size: var(--fs-300);
   font-weight: var(--fw-semi-bold);
-  /* padding-left: 24px; */
   transform: translateX(-29%);
 }
 
@@ -191,15 +184,13 @@ body {
     display: grid;
     grid-template-areas: 
     'main-content picture';
-    grid-template-columns: 1.325fr 1fr;
+    grid-template-columns: 1.35fr 1fr;
     height: 100vh;
   }
 
   .company-logo {
     height: 33px;
     width: 158px;
-    /* z-index: 3; */
-    /* padding-bottom: 136.09px; */
   }
 
   header, 
@@ -208,7 +199,6 @@ body {
     background-image: url('images/bg-pattern-desktop.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 100%; */
   }
 
   .primary-header,
@@ -218,22 +208,12 @@ body {
 
   .primary-header > img {
     position: absolute;
-    /* z-index: 1; */
   }
 
   .hero-img-container {
     grid-area: picture;
     height: 100vh;
-    /* width: 100%; */
-    /* background-image: url("/images/hero-desktop.jpg"); */
-    /* background-repeat: no-repeat; */
-    /* height: 790px; */
   }
-
-  /* .hero-img-container > picture {
-    object-fit: fill;
-    height: 100%;
-  } */
 
   .hero-img {
     object-fit: fill;
@@ -278,13 +258,11 @@ body {
     height: 56px;
   }
 
-  /* TODO: Fix box shadow and error icon/message placement. Add hover color change */
   .email-submit-btn {
     width: 100px;
     height: 56px;
     margin-left: -100px;
     /* offset-x |  offset-y | blur-radius (larger the value, greater the blur) | spread-radius (negative value to shrink shadow inward) | color */
-    /* box-shadow: 0em 0.7em 2.5em 0em var(--clr-primary-100); */
     box-shadow: 0em 0.7em 1em 0.2em hsl(0, 36%, 70%, 30%);
   }
 
